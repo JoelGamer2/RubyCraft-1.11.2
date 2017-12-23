@@ -57,6 +57,7 @@ public class Crafteos {
         GameRegistry.addRecipe(new ItemStack(Bloques.generar_dragon, 1), new Object[]{"mrp","rzr","prm",'m',RItems.manzana_de_diamante,'r',RItems.Pepita_de_Ruby,'p',RItems.Pepita_de_Zafiro,'z',RItems.zafiro});
         GameRegistry.addRecipe(new ItemStack(RItems.varita, 1), new Object[]{" rr"," pr","p  ",'r',RItems.ruby,'p',Items.STICK});
         GameRegistry.addRecipe(new ItemStack(Bloques.bloque_reforzado_tier_1, 2), new Object[]{"pbz","bab","rbp",'p',Bloques.bloque_de_platino, 'b', Blocks.IRON_BARS, 'z', RItems.zafiro, 'a', RItems.barra_de_aluminio, 'r', RItems.ruby});
+	    GameRegistry.addRecipe(new ItemStack(Bloques.bloque_de_actualizaciones, 1), new Object[]{"oro","dcd","oro",'o', Items.GOLD_INGOT,'r',Items.REDSTONE,'d',Items.DIAMOND,'c',Items.COMPARATOR});	
 
         
     	Crafteos_Bases.Bloques(RItems.ruby, Bloques.bloque_de_ruby);

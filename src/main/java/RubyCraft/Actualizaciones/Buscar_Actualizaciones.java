@@ -9,6 +9,7 @@ import org.apache.logging.log4j.core.config.plugins.ResolverUtil.Test;
 
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
+import RubyCraft.Bloques.bloque_de_actualizaciones;
 
 public class Buscar_Actualizaciones {
 
@@ -35,23 +36,28 @@ public class Buscar_Actualizaciones {
 					scanner.close();
 					if(!Referencia.VERSION.equals(UltimaVersion)){
 						RubyCraft.logger.info(UltimaVersion + " Esta es la Ultima Version de RubyCraft Disponible");
+						bloque_de_actualizaciones.UltimaVersion = UltimaVersion;
 						if(!Mensaje1.equals("")){
 						RubyCraft.logger.info(Mensaje1);
+						bloque_de_actualizaciones.Mensaje1 = Mensaje1;
 						TestearActualizaciones.Mensaje1 = Mensaje1;
 						}if(!Mensaje2.equals("")){
 							RubyCraft.logger.info(Mensaje2);
+							bloque_de_actualizaciones.Mensaje2 = Mensaje2;
 							TestearActualizaciones.Mensaje2 = Mensaje2;
 						}else{
 							TestearActualizaciones.Mensaje2a = false;
 						}	
 						if(!Mensaje3.equals("")){
 							RubyCraft.logger.info(Mensaje3);
+							bloque_de_actualizaciones.Mensaje3 = Mensaje3;
 							TestearActualizaciones.Mensaje3 = Mensaje3;
 						}else{
 							TestearActualizaciones.Mensaje3a = false;
 						}
 						if(Mensaje1.equals("") && Mensaje2.equals("") && Mensaje3.equals("")){			
 							RubyCraft.logger.info("No hay cambios en actualizacion");
+							bloque_de_actualizaciones.Mensaje1 = "No Hay Cambios en actualizacion";
 							TestearActualizaciones.Mensaje1 = "No hay Cambios en actualizacion";
 						}
 						

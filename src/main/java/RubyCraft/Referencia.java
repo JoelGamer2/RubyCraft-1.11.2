@@ -106,6 +106,7 @@ public class Referencia {
         BLOQUE_REFORZADO_TIER_I("bloque_reforzado_tier_1","bloque_reforzado_tier_1"),
         BLOQUE_DE_PLATINO("bloque_de_platino","bloque_de_platino"),
         MENA_DE_PLATINO("mena_de_platino","mena_de_platino"),
+        BLOQUE_DE_ACTUALIZACIONES("bloque_de_actualizaciones","bloque_de_actualizaciones"),
 		
 		;
 		private String UnlocalizedName;

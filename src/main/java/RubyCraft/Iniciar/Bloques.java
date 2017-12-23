@@ -20,6 +20,7 @@ import RubyCraft.Bloques.Madera_Azul;
 import RubyCraft.Bloques.Madera_Verde;
 import RubyCraft.Bloques.Tronco_Azul;
 import RubyCraft.Bloques.Tronco_de_Madera_verde;
+import RubyCraft.Bloques.bloque_de_actualizaciones;
 import RubyCraft.Bloques.bloque_de_blaze;
 import RubyCraft.Bloques.bloque_de_caca;
 import RubyCraft.Bloques.bloque_de_cobre;
@@ -104,6 +105,7 @@ public class Bloques {
     public static Block bloque_reforzado_tier_1;
     public static Block bloque_de_platino;
     public static Block mena_de_platino;
+    public static Block bloque_de_actualizaciones;
 
     //Interfaces
     
@@ -159,6 +161,7 @@ public class Bloques {
         bloque_reforzado_tier_1 = new bloque_reforzado_tier_1();
         bloque_de_platino = new bloque_de_platino();
         mena_de_platino = new mena_de_platino();
+        bloque_de_actualizaciones = new bloque_de_actualizaciones();
         
 	}
 	public static void Registrar(){
@@ -210,6 +213,7 @@ public class Bloques {
 		RegistrarBloque(bloque_reforzado_tier_1);
 		RegistrarBloque(bloque_de_platino);
 		RegistrarBloque(mena_de_platino);
+		RegistrarBloque(bloque_de_actualizaciones);
 
 	}
 	
@@ -262,6 +266,7 @@ public class Bloques {
 	    RegistrarRenderizado(bloque_reforzado_tier_1);
 	    RegistrarRenderizado(bloque_de_platino);
 	    RegistrarRenderizado(mena_de_platino);
+	    RegistrarRenderizado(bloque_de_actualizaciones);
 	}
 	
       private static void RegistrarBloque(Block block){
