@@ -56,7 +56,7 @@ public class RubyCraft {
 		
 			
 		}
-		if(!Control_de_Version.Version_de_desarrolador){		
+		if(!Control_de_Version.Version_de_desarrollador){		
 		Buscar_Actualizaciones.MirarActualizaciones();
 		}
 		BuscarVersionTrol.MirarVersionTrol();
