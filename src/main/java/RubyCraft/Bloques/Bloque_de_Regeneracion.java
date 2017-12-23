@@ -31,6 +31,7 @@ public class Bloque_de_Regeneracion extends Block {
 		
 		this.setHardness(0.5F);
 		this.setHarvestLevel("pickaxe", 1);
+	
 		
 	}
 	 /**
