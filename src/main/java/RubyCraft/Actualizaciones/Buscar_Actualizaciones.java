@@ -12,7 +12,7 @@ import RubyCraft.RubyCraft;
 
 public class Buscar_Actualizaciones {
 
-	private static final String Actualizacion_Url = "https://www.dropbox.com/s/y52p9naek5yrgjr/RubyCraft-Updates.txt?raw=1";
+	private static final String Actualizacion_Url = "https://www.dropbox.com/s/fan0ya9zg5m10y9/RubyCraft-Updates.txt?raw=1";
 	private static boolean NuevaVersion = false;
 	
 	public static void MirarActualizaciones(){
