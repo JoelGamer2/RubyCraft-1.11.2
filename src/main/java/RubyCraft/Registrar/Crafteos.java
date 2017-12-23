@@ -156,4 +156,16 @@ public class Crafteos {
 		
 	}
 	
+	public static void IniciarCrafteosDiadelosInocentes() {
+		
+	}
+	
+	public static void IniciarCrafteosHallowen() {
+		
+	}
+	
+	public static void IniciarCrafteosNavidad() {
+		
+	}
+	
 }

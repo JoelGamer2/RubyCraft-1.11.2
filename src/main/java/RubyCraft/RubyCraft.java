@@ -7,7 +7,6 @@ import org.apache.logging.log4j.LogManager;
 import RubyCraft.Actualizaciones.Buscar_Actualizaciones;
 import RubyCraft.Eventos.Evento;
 import RubyCraft.Generacion.Registrar_generaciones;
-import RubyCraft.Handles.GuiHandler;
 import RubyCraft.Handles.RubyCraftSoundhandler;
 import RubyCraft.Iniciar.Armaduras;
 import RubyCraft.Iniciar.Bloques;
@@ -20,8 +19,6 @@ import RubyCraft.Registrar.ModificarCosasMineCraftVanilla;
 import RubyCraft.VersionTrol.BuscarVersionTrol;
 import RubyCraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.inventory.ContainerChest;
-import net.minecraft.tileentity.TileEntityChest;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -29,7 +26,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 
 @Mod(modid = Referencia.MOD_ID, name = Referencia.NAME, version = Referencia.VERSION, acceptedMinecraftVersions = Referencia.ACCEPTED_VERSIONS)
@@ -37,6 +33,8 @@ public class RubyCraft {
    
 	public static boolean VersionTrol = false;
 	public static boolean Navidad = false;
+	public static boolean Hallowen = false;
+	public static boolean Dia_de_Los_Inocentes = false;
 	
 	public static final org.apache.logging.log4j.Logger logger = LogManager.getFormatterLogger("RubyCraft");
 	
@@ -58,8 +56,9 @@ public class RubyCraft {
 		
 			
 		}
-		
+		if(!Control_de_Version.Version_de_desarrolador){		
 		Buscar_Actualizaciones.MirarActualizaciones();
+		}
 		BuscarVersionTrol.MirarVersionTrol();
 				
 		Evento.Iniciar();
@@ -86,12 +85,7 @@ public class RubyCraft {
 		
 		ModificarCosasMineCraftVanilla.preinit();
 		
-
-		Calendar calendar = Calendar.getInstance();
-		if(calendar.get(2) + 1 == 12 && calendar.get(5) >= 24 && calendar.get(5) <= 31 && Control_de_Version.Navidad_Activar == false){
-			RubyCraft.logger.info("Es Navidad");
-			Navidad = true;
-		}
+		Eventos_Calendario.Iniciar_Test_de_Calendario();
 		
 	}
 	

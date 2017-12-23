@@ -6,6 +6,7 @@ death.attack.Troleo.player=%$s to been Trolled Por %2$s.
 block.mesa_de_conjuraciones_error=Conjuration Table error
 block.mesa_de_conjuraciones_hechizo=Conjuration Table enchant
 record.cancion_sans=Sans Record
+random.actualiza=New Update
 
 gui.Mesa_de_Ruby.name=Ruby Table
 gui.Inventario.name=Inventory

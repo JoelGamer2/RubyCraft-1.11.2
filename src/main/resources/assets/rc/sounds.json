@@ -15,5 +15,11 @@
 	"category": "records",
 	"subtitle": "record.cancion_sans",
 	"sounds": [ {"name":"rc:record/undertale/sans", "stream": true} ]
+	},
+	
+	"random.actualiza":{
+	"category": "master",
+	"subtitle": "random.actualiza",
+	"sounds": [ {"name":"rc:random/actualiza", "stream": true} ]
 	}
 }
