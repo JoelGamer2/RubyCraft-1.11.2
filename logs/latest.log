@@ -1,10 +1,10 @@
-[00:03:36] [Client thread/INFO]: Setting user: Player828
-[00:03:48] [Client thread/WARN]: Skipping bad option: lastServer:
-[00:03:48] [Client thread/INFO]: LWJGL Version: 2.9.4
-[00:03:50] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
-// I bet Cylons wouldn't have this problem.
+[19:13:58] [Client thread/INFO]: Setting user: Player343
+[19:14:16] [Client thread/WARN]: Skipping bad option: lastServer:
+[19:14:16] [Client thread/INFO]: LWJGL Version: 2.9.4
+[19:14:20] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
 
-Time: 12/24/17 12:03 AM
+Time: 12/24/17 7:14 PM
 Description: Loading screen debug info
 
 This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
@@ -19,43 +19,44 @@ Details:
 	Operating System: Windows 7 (amd64) version 6.1
 	Java Version: 1.8.0_25, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 876792104 bytes (836 MB) / 1056309248 bytes (1007 MB) up to 1056309248 bytes (1007 MB)
+	Memory: 821963744 bytes (783 MB) / 1056309248 bytes (1007 MB) up to 1056309248 bytes (1007 MB)
 	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'Intel' Version: '3.1.0 - Build 9.17.10.4459' Renderer: 'Intel(R) HD Graphics'
-[00:03:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:RubyCraft
-[00:04:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[00:04:04] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[00:04:04] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[00:04:04] [Thread-8/INFO]: OpenAL initialized.
-[00:04:04] [Sound Library Loader/INFO]: Sound engine started
-[00:04:14] [Client thread/INFO]: Created: 16x16 textures-atlas
-[00:04:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:RubyCraft
-[00:04:20] [Client thread/INFO]: SoundSystem shutting down...
-[00:04:20] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[00:04:20] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[00:04:20] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[00:04:20] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[00:04:20] [Thread-10/INFO]: OpenAL initialized.
-[00:04:21] [Sound Library Loader/INFO]: Sound engine started
-[00:04:29] [Client thread/INFO]: Created: 512x512 textures-atlas
-[00:04:33] [Client thread/WARN]: Skipping bad option: lastServer:
-[00:04:34] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[00:04:37] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
-[00:04:37] [Server thread/INFO]: Generating keypair
-[00:04:38] [Server thread/INFO]: Preparing start region for level 0
-[00:04:39] [Server thread/INFO]: Preparing spawn area: 17%
-[00:04:40] [Server thread/WARN]: Keeping entity minecraft:sheep that already exists with UUID 3b6e513b-9f25-43db-bb77-75bc4efe4916
-[00:04:40] [Server thread/WARN]: Keeping entity minecraft:chicken that already exists with UUID c27623a3-7191-4b14-8030-3756edf88d52
-[00:04:40] [Server thread/WARN]: Keeping entity minecraft:chicken that already exists with UUID ade30bcf-d0ab-4ef3-832b-3abd92e42602
-[00:04:40] [Server thread/INFO]: Changing view distance to 2, from 10
-[00:04:43] [Server thread/INFO]: Player828[local:E:15581bac] logged in with entity id 73 at (371.1112306463863, 5.523496506112495, -923.778935359514)
-[00:04:43] [Server thread/INFO]: Player828 se ha unido a la partida
-[00:04:44] [Server thread/INFO]: Saving and pausing game...
-[00:04:44] [Server thread/INFO]: Saving chunks for level 'Mundo nuevo'/Overworld
-[00:04:44] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@4f1cbf25[id=446355e4-985a-3d9c-a63c-4d95aa4b0dff,name=Player828,properties={},legacy=false]
+[19:14:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:RubyCraft
+[19:14:42] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:14:42] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[19:14:42] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:14:43] [Thread-8/INFO]: OpenAL initialized.
+[19:14:43] [Sound Library Loader/INFO]: Sound engine started
+[19:15:00] [Client thread/INFO]: Created: 16x16 textures-atlas
+[19:15:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:RubyCraft
+[19:15:16] [Client thread/INFO]: SoundSystem shutting down...
+[19:15:16] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[19:15:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:15:16] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[19:15:16] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:15:16] [Thread-10/INFO]: OpenAL initialized.
+[19:15:17] [Sound Library Loader/INFO]: Sound engine started
+[19:15:33] [Client thread/INFO]: Created: 512x512 textures-atlas
+[19:15:40] [Client thread/WARN]: Skipping bad option: lastServer:
+[19:15:41] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[19:15:53] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[19:15:53] [Server thread/INFO]: Generating keypair
+[19:15:55] [Server thread/INFO]: Preparing start region for level 0
+[19:15:56] [Server thread/INFO]: Preparing spawn area: 22%
+[19:15:57] [Server thread/INFO]: Changing view distance to 2, from 10
+[19:16:00] [Server thread/INFO]: Player343[local:E:eeedbdb4] logged in with entity id 59 at (369.1489349846046, 4.0, -923.7891949332089)
+[19:16:00] [Server thread/INFO]: Player343 se ha unido a la partida
+[19:16:01] [Server thread/INFO]: Saving and pausing game...
+[19:16:02] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Player343 Hay Una Nueva Version Disponible: §c1.3
+[19:16:02] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Se incluye nuevas mesas
+[19:16:02] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6de Crafteo con nuevos items
+[19:16:02] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6muy interesantes y bloques
+[19:16:03] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/Overworld
+[19:16:03] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@12d788ac[id=9a9101ac-937d-31fc-99f0-be5bc89dd1bc,name=Player343,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
@@ -77,29 +78,25 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_25]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_25]
 	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_25]
-[00:04:44] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Player828 Hay Una Nueva Version Disponible: §c1.3
-[00:04:44] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Se incluye nuevas mesas
-[00:04:44] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6de Crafteo con nuevos items
-[00:04:44] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6muy interesantes y bloques
-[00:04:45] [Server thread/INFO]: Saving chunks for level 'Mundo nuevo'/Nether
-[00:04:45] [Server thread/INFO]: Saving chunks for level 'Mundo nuevo'/The End
-[00:04:52] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Player828 Hay Una Nueva Version Disponible: §c1.3
-[00:04:52] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Se incluye nuevas mesas
-[00:04:52] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6de Crafteo con nuevos items
-[00:04:52] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6muy interesantes y bloques
-[00:04:52] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Player828 Hay Una Nueva Version Disponible: §c1.3
-[00:04:52] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Se incluye nuevas mesas
-[00:04:52] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6de Crafteo con nuevos items
-[00:04:52] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6muy interesantes y bloques
-[00:04:53] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Player828 Hay Una Nueva Version Disponible: §c1.3
-[00:04:53] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Se incluye nuevas mesas
-[00:04:53] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6de Crafteo con nuevos items
-[00:04:53] [Client thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6muy interesantes y bloques
-[00:04:53] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Player828 Hay Una Nueva Version Disponible: §c1.3
-[00:04:53] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6Se incluye nuevas mesas
-[00:04:53] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6de Crafteo con nuevos items
-[00:04:53] [Server thread/INFO]: [CHAT] §7[§aRubyCraft§7] §6muy interesantes y bloques
-[00:04:58] [Server thread/INFO]: Saving and pausing game...
-[00:04:58] [Server thread/INFO]: Saving chunks for level 'Mundo nuevo'/Overworld
-[00:04:58] [Server thread/INFO]: Saving chunks for level 'Mundo nuevo'/Nether
-[00:04:58] [Server thread/INFO]: Saving chunks for level 'Mundo nuevo'/The End
+[19:16:03] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/Nether
+[19:16:04] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/The End
+[19:16:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3563ms behind, skipping 71 tick(s)
+[19:16:22] [Server thread/INFO]: [Player343: Tiempo ajustado a 1000]
+[19:16:22] [Client thread/INFO]: [CHAT] Tiempo ajustado a 1000
+[19:18:03] [Client thread/INFO]: [CHAT] §6Player343§9 En Navidas no se Trolea
+[19:18:07] [Server thread/INFO]: Saving and pausing game...
+[19:18:07] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/Overworld
+[19:18:07] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/Nether
+[19:18:07] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/The End
+[19:18:07] [Server thread/INFO]: Stopping server
+[19:18:07] [Server thread/INFO]: Saving players
+[19:18:07] [Server thread/INFO]: Player343 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[19:18:07] [Server thread/INFO]: Player343 ha abandonado la partida
+[19:18:07] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[19:18:07] [Server thread/INFO]: Saving worlds
+[19:18:07] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/Overworld
+[19:18:07] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/Nether
+[19:18:07] [Server thread/INFO]: Saving chunks for level 'Mundo pruebas locas'/The End
+[19:18:09] [Client thread/INFO]: Stopping!
+[19:18:09] [Client thread/INFO]: SoundSystem shutting down...
+[19:18:09] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

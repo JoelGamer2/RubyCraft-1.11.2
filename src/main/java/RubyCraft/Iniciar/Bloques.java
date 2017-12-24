@@ -282,4 +282,5 @@ public class Bloques {
 	private static void RegistrarRenderizado(Block block){
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
 	}
+	
 }

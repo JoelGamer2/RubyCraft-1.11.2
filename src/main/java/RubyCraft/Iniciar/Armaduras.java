@@ -34,10 +34,13 @@ public class Armaduras {
 	public static Item pantacas_de_uranio;
 	public static Item botas_de_uranio;
 	
+	public static Item elitros;
+	
 	//Material
 	public static final ItemArmor.ArmorMaterial RubyArmorMaterial = EnumHelper.addArmorMaterial("RubyArmorMaterial",Referencia.MOD_ID + ":ruby", 3000, new int[]{4,5,4,4}, 45, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);	   
 	public static final ItemArmor.ArmorMaterial ZafiroArmorMaterial = EnumHelper.addArmorMaterial("ZafiroArmorMaterial", Referencia.MOD_ID + ":zafiro", 2000, new int[]{5,6,7,2}, 45, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);	
 	public static final ItemArmor.ArmorMaterial UranioArmorMaterial = EnumHelper.addArmorMaterial("UranioArmorMaterial", Referencia.MOD_ID + ":uranio", 1000, new int[]{3,5,3,1}, 45, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.0F);
+	public static final ItemArmor.ArmorMaterial elitromaterial  = EnumHelper.addArmorMaterial("elitromaterial", Referencia.MOD_ID + ":elitro", 256, new int[] {1,1,1,1}, 45, SoundEvents.ITEM_ARMOR_EQIIP_ELYTRA, 0.0F);
 	
 	public static void Iniciar(){
 		
@@ -55,6 +58,8 @@ public class Armaduras {
      pechera_de_uranio = new ArmadurasBases(UranioArmorMaterial, 1, EntityEquipmentSlot.CHEST, "pechera_de_uranio");
      pantacas_de_uranio = new ArmadurasBases(UranioArmorMaterial, 2, EntityEquipmentSlot.LEGS, "pantacas_de_uranio");
      botas_de_uranio = new ArmadurasBases(UranioArmorMaterial, 1, EntityEquipmentSlot.FEET, "botas_de_uranio");
+     
+     elitros = new ArmadurasBases(elitromaterial, 1, EntityEquipmentSlot.CHEST, "elitros");
 		
 	}
 	
@@ -75,6 +80,8 @@ public class Armaduras {
 	RegistrarItem(pantacas_de_uranio);
 	RegistrarItem(botas_de_uranio);
 	
+	RegistrarItem(elitros);
+	
 	}
 	
 	public static void RegistrarRenders(){
@@ -93,6 +100,8 @@ public class Armaduras {
    RegistrarRender(pechera_de_uranio);
    RegistrarRender(pantacas_de_uranio);
    RegistrarRender(botas_de_uranio);
+   
+   RegistrarRender(elitros);
 		
 	}
 	

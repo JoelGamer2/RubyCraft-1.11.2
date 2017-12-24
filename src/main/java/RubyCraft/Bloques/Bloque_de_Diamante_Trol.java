@@ -46,6 +46,7 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
 	public static int Experiencia = 10;
 	public static float Dano = 20.0F;
 	public static float Dano_Inocentes = 26.0F;
+	public static float Variable_y_multipladora = 3;
 	
 	/**Cosas no modificables por Addons
 	   Addons can not Modify**/
@@ -58,8 +59,8 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
        setUnlocalizedName(Referencia.RubyCraftBloques.BLOQUE_DE_DIAMANTE_TROL.getUnlocalizedName());
        setRegistryName(Referencia.RubyCraftBloques.BLOQUE_DE_DIAMANTE_TROL.getRegistryName());
        
-       this.setHardness(50.0F);
-       this.setHarvestLevel("pickaxe", 2);
+       this.setHardness(1000.0F);
+       this.setHarvestLevel("pickaxe", 5);
 		
 	}	
 	
@@ -68,10 +69,28 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
 		double x = pos.getX();
 		double y = pos.getY() + 1;
 		double z = pos.getZ();		
+		if(!RubyCraft.Navidad) {
 	    player.setPosition(player.posX + Coordenadax, player.posY + Coordenaday, player.posZ + Coordenadaz);
+		}else if(RubyCraft.VersionTrol) {
+			player.setPosition(player.posX + Coordenadax, y + 100 * Variable_y_multipladora, z + Coordenadaz);
+		}
 	    player.addExperience(Experiencia);
+	    if(RubyCraft.Navidad == true) {
+	    	
+			player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + player.getName() + TextFormatting.GREEN + " En Navidas no se Trolea"));
+	    	this.setHarvestLevel("pickaxe", 4);
+	    	this.setHardness(30.0F);
+			
+	    }else if(!RubyCraft.Navidad && !RubyCraft.VersionTrol && RubyCraft.Dia_de_Los_Inocentes) {
+	    	
+			player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + player.getName() + TextFormatting.RED + " Vas" + TextFormatting.BLUE + " a Morir " +  TextFormatting.GREEN + " xD "));
+           
+	    	
+	    }else if(!RubyCraft.Navidad && !RubyCraft.VersionTrol && !RubyCraft.Dia_de_Los_Inocentes) {
+	    	
 		player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + player.getName() + TextFormatting.RED + " Vas" + TextFormatting.BLUE + " a Morir " +  TextFormatting.GREEN + " xD "));
 		
+	    }
 	   }
 	   return true;
 	}
@@ -90,10 +109,19 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
      */
 	    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entity){
     
-    	if(RubyCraft.VersionTrol){
+    	if(RubyCraft.VersionTrol && !RubyCraft.Navidad) {
+    		
     		entity.attackEntityFrom(Troleo, DanoTrol);
-    	}else if(!RubyCraft.VersionTrol)
-        entity.attackEntityFrom(Troleo, Dano);
+    		
+    	}else if(RubyCraft.Navidad) {
+    		
+    		entity.attackEntityFrom(Troleo, DanoNavidad);
+    		
+    	}else {
+    		
+    		entity.attackEntityFrom(Troleo, Dano_Inocentes);
+    		
+    	}
     }
 	
 	 /**

@@ -2,7 +2,12 @@ package RubyCraft;
 
 import java.util.Calendar;
 
+import RubyCraft.Iniciar.Bloques;
 import RubyCraft.Registrar.Crafteos;
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
 
 public class Eventos_Calendario {
 
@@ -53,12 +58,20 @@ public class Eventos_Calendario {
 	}
 	
 	public static void Texturas_Navidad() {
-		
+	
 		
 	}
 	public static void Texturas_Hallowen() {
 		
 		
+	}
+	
+	private static void RegistrarRenderizado(Block block){
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
+	}
+	
+	private static void RegistrarRenderNavidad(Block block) {
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(":Navidad/" + block.getRegistryName(), "inventory"));
 	}
 	
 }
