@@ -4,8 +4,10 @@ import java.util.Random;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 
+import RubyCraft.Control_de_Version;
 import RubyCraft.Referencia;
 import RubyCraft.RubyCraft;
+import RubyCraft.Iniciar.Bloques;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCactus;
 import net.minecraft.block.BlockCompressedPowered;
@@ -61,37 +63,38 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
        
        this.setHardness(1000.0F);
        this.setHarvestLevel("pickaxe", 5);
-		
+      
 	}	
 	
 	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ){
 	if(world.isRemote){	
-		double x = pos.getX();
-		double y = pos.getY() + 1;
-		double z = pos.getZ();		
-		if(!RubyCraft.Navidad) {
+		BlockPos yu = pos.up();
+		BlockPos pos1 = pos;		
+
+     if(!RubyCraft.Navidad && !RubyCraft.VersionTrol && !RubyCraft.Dia_de_Los_Inocentes) {
+ 		player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + player.getName() + TextFormatting.RED + " Vas" + TextFormatting.BLUE + " a Morir " +  TextFormatting.GREEN + " xD "));
+ 		if(!Control_de_Version.Version_de_desarrollador) {
 	    player.setPosition(player.posX + Coordenadax, player.posY + Coordenaday, player.posZ + Coordenadaz);
-		}else if(RubyCraft.VersionTrol) {
-			player.setPosition(player.posX + Coordenadax, y + 100 * Variable_y_multipladora, z + Coordenadaz);
-		}
+ 		}
 	    player.addExperience(Experiencia);
+	    world.setBlockState(pos1, Blocks.FLOWING_LAVA.getDefaultState(), 2);
+	    
+		}else if(RubyCraft.VersionTrol) {
+		player.setPosition(player.posX + Coordenadax, player.posY + 100 * Variable_y_multipladora, player.posZ + Coordenadaz);
+		}
 	    if(RubyCraft.Navidad == true) {
 	    	
 			player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + player.getName() + TextFormatting.GREEN + " En Navidas no se Trolea"));
 	    	this.setHarvestLevel("pickaxe", 4);
 	    	this.setHardness(30.0F);
+
 			
 	    }else if(!RubyCraft.Navidad && !RubyCraft.VersionTrol && RubyCraft.Dia_de_Los_Inocentes) {
 	    	
 			player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + player.getName() + TextFormatting.RED + " Vas" + TextFormatting.BLUE + " a Morir " +  TextFormatting.GREEN + " xD "));
            
-	    	
-	    }else if(!RubyCraft.Navidad && !RubyCraft.VersionTrol && !RubyCraft.Dia_de_Los_Inocentes) {
-	    	
-		player.sendMessage(new TextComponentTranslation(TextFormatting.GOLD + player.getName() + TextFormatting.RED + " Vas" + TextFormatting.BLUE + " a Morir " +  TextFormatting.GREEN + " xD "));
-		
 	    }
-	   }
+	}
 	   return true;
 	}
 	

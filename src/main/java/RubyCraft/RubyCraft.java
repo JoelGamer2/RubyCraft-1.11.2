@@ -56,6 +56,7 @@ public class RubyCraft {
 		}
 		if(!Control_de_Version.Version_de_desarrollador){		
 		Buscar_Actualizaciones.MirarActualizaciones();
+		Eventos_Calendario.Iniciar_Test_de_Calendario();
 		}
 		BuscarVersionTrol.MirarVersionTrol();
 				
@@ -82,8 +83,6 @@ public class RubyCraft {
 		
 		
 		ModificarCosasMineCraftVanilla.preinit();
-		
-		Eventos_Calendario.Iniciar_Test_de_Calendario();
 		
 	}
 	
