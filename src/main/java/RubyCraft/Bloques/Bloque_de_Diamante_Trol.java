@@ -77,7 +77,8 @@ public class Bloque_de_Diamante_Trol extends BlockCompressedPowered{
 	    player.setPosition(player.posX + Coordenadax, player.posY + Coordenaday, player.posZ + Coordenadaz);
  		}
 	    player.addExperience(Experiencia);
-	    world.setBlockState(pos1, Blocks.FLOWING_LAVA.getDefaultState(), 2);
+	    world.setBlockState(yu, Blocks.FLOWING_LAVA.getDefaultState(), 2);
+	    world.setBlockState(pos1, Blocks.AIR.getDefaultState(), 2);
 	    
 		}else if(RubyCraft.VersionTrol) {
 		player.setPosition(player.posX + Coordenadax, player.posY + 100 * Variable_y_multipladora, player.posZ + Coordenadaz);
