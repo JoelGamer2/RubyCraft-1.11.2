@@ -21,18 +21,15 @@ public class Eventos_Calendario {
 		if (calendar.get(2) + 1 == 12 && calendar.get(5) >= 24 && calendar.get(5) <= 31 && Control_de_Version.Navidad_Activar == false){
 	        RubyCraft.Navidad = true;
 	        Crafteos.IniciarCrafteosNavidad();
-	        Texturas_Navidad();
 	    }else{
 	    	//Testear Hallowen
 	    	if(calendar.get(2) + 1 == 10 && calendar.get(5) == 31){
 	    		RubyCraft.Hallowen = true;
 	    		Crafteos.IniciarCrafteosHallowen();
-	    		Texturas_Hallowen();
 	    	}else{
 	    		//Testear el Dia de Los Inocentes
 	    		if(calendar.get(2) + 1 == 12 && calendar.get(5) == 28){
 	    			Crafteos.IniciarCrafteosDiadelosInocentes();
-	    			Texturas_Normales();
 	    			RubyCraft.Dia_de_Los_Inocentes = true;
 	    					
 	    		} else if (Control_de_Version.Navidad_Activar == false){
@@ -40,10 +37,8 @@ public class Eventos_Calendario {
 	    			RubyCraft.Hallowen = false;
 	    			RubyCraft.Dia_de_Los_Inocentes = false;
 	    			
-	    			Texturas_Normales();
 	    		}else if(Control_de_Version.Navidad_Activar == true) {
 	    			
-	    			Texturas_Navidad();
 	    			RubyCraft.Navidad = true;
 	    			
 	    		}
@@ -53,12 +48,11 @@ public class Eventos_Calendario {
 		
 	
 	public static void Texturas_Normales() {
-			
+
 		
 	}
 	
 	public static void Texturas_Navidad() {
-	
 		
 	}
 	public static void Texturas_Hallowen() {
@@ -66,12 +60,12 @@ public class Eventos_Calendario {
 		
 	}
 	
-	private static void RegistrarRenderizado(Block block){
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
+	private static void RegistrarRenderizadoNormal(Block block){
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Referencia.MOD_ID + ":" + block.getUnlocalizedName().substring(5)));	
 	}
 	
 	private static void RegistrarRenderNavidad(Block block) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(":Navidad/" + block.getRegistryName(), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Referencia.MOD_ID + ":Navidad/" + block.getUnlocalizedName().substring(5)));	
 	}
 	
 }
